@@ -24,7 +24,7 @@ public class LoginTest extends BaseTests{
 
     @DataProvider
     public Object[][] LoginData(){
-        Object[][] data = new Object[4][3];
+        Object[][] data = new Object[5][3];
         data[0][0] = "tomsmith";data[0][1] = "SuperSecretPassword!";data[0][2] =  true;
         data[1][0] = "tomsmith1";data[1][1] = "SuperSecretPassword!2";data[1][2] =  true;
         data[2][0] = "tomsmith1";data[2][1] = "SuperSecretPassword!2";data[2][2] =  true;
