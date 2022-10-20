@@ -18,6 +18,7 @@ public class LoginTest extends BaseTests{
 
     //LoginPage logoutPage = secureAreaPage.clickLogOutBtn();
     //Assert.assertTrue(Success,logoutPage.getLogOutMsg());
+    //This is nice    
     loginPage.clickLogOutBtn();
     Assert.assertTrue(loginPage.getLogOutMsg().contains("You logged out of the secure area!"));
     }
