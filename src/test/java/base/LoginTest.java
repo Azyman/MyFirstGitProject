@@ -29,6 +29,7 @@ public class LoginTest extends BaseTests{
         data[1][0] = "tomsmith1";data[1][1] = "SuperSecretPassword!2";data[1][2] =  true;
         data[2][0] = "tomsmith1";data[2][1] = "SuperSecretPassword!2";data[2][2] =  true;
         data[3][0] = "tomsmith";data[3][1] = "SuperSecretPassword!";data[3][2] =  true;
+        data[4][0] = "tomsmith";data[4][1] = "SuperSecretPassword!";data[4][2] =  true;
         return data;
     }
 }
