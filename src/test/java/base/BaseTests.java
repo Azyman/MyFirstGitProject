@@ -25,7 +25,7 @@ public class BaseTests {
 @BeforeMethod
     public void setup(){
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless");
+        //options.addArguments("--headless");
         //System.setProperty("webdriver.gecko.driver","Resources/geckodriver");
         //driver = new FirefoxDriver();
         System.setProperty("webdriver.chrome.driver","Resources/chromedriver");
@@ -65,7 +65,7 @@ public class BaseTests {
 
     @AfterMethod
     public void tearDown(){
-        driver.quit();
+        //driver.quit();
     }
 
 }
