@@ -1,5 +1,6 @@
 package base;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -28,7 +29,8 @@ public class BaseTests {
         //options.addArguments("--headless");
         //System.setProperty("webdriver.gecko.driver","Resources/geckodriver");
         //driver = new FirefoxDriver();
-        System.setProperty("webdriver.chrome.driver","Resources/chromedriver");
+        //System.setProperty("webdriver.chrome.driver","Resources/chromedriver");
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver(options);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.get(BASEURL);
